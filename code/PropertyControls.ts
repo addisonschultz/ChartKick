@@ -1,5 +1,7 @@
 import { ControlType, PropertyControls } from "framer";
 
+// See https://gist.github.com/addisonschultz/23df9e22cc6857383f1e830f52c16645 for more usage information
+
 export function generatePropertyControls(
   options: {
     hidden?: (props: any) => boolean;
@@ -69,6 +71,18 @@ export function generatePropertyControls(
         return props.legend === "";
       }
     }
+
+    /**
+     * @TODO add functionaity to easily create data controls
+     */
+
+    // data: {
+    //   type: ControlType.Array,
+    //   propertyControl: {
+    //     type: ControlType.String,
+    //     title: ""
+    //   }
+    // }
   };
 
   if (!!options.omittedProperties) {
