@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Frame, addPropertyControls, ControlType } from "framer";
+import { generatePropertyControls } from "./PropertyControls";
 import { BarChart } from "react-chartkick";
 import "chart.js";
 
@@ -12,27 +13,18 @@ export function ChartkickBarChart(props) {
         id="users-chart"
         width="100%"
         height="100%"
-        // stacked={true}
-        // discrete={true}
-        label="Value"
-        xtitle="Time"
-        ytitle="Revenues"
-        curve={true}
-        // legend={true}
-        legend="bottom"
-        // donut={true}
-        prefix="$"
-        suffix="M"
-        // thousands=","
-        // decimal=","
-        // precision={3}
-        // round={2}
-        // zeros={true}
-        // bytes={true}
-        // refresh={60} //Refresh data from a remote source every n seconds
-        // download={{ background: "#fff" }} //Opens the image in a new window so to be downloadable
+        min={props.min}
+        max={props.max}
+        stacked={props.stacked}
+        discrete={props.discrete}
+        label={props.label}
+        xtitle={props.xtitle}
+        ytitle={props.ytitles}
+        prefix={props.prefix}
+        suffix={props.suffix}
+        curve={props.curve}
+        legend={props.legend}
         messages={{ empty: "No data available" }}
-        // dataset={{ borderWidth: 0 }}
         data={[
           ["X-Small", 5],
           ["Small", 27]
@@ -42,7 +34,7 @@ export function ChartkickBarChart(props) {
   );
 }
 
-addPropertyControls(ChartkickBarChart, {});
+addPropertyControls(ChartkickBarChart, { ...generatePropertyControls() });
 
 ChartkickBarChart.defaultProps = {
   height: 300,

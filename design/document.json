@@ -14,7 +14,17 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/AreaChart.tsx_ChartkickAreaChart",
         "codeComponentProps" : {
-          "label" : ""
+          "curved" : true,
+          "discrete" : true,
+          "label" : "Label",
+          "legend" : "left",
+          "max" : 0,
+          "min" : 0,
+          "prefix" : "",
+          "stacked" : true,
+          "suffix" : "",
+          "xtitle" : "X Title",
+          "ytitle" : "Y Title"
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -32,10 +42,10 @@
         "fillType" : "color",
         "height" : 300,
         "heightType" : 0,
-        "id" : "ng5wrWnI8",
+        "id" : "XnhoJI3jv",
         "intrinsicHeight" : 300,
         "intrinsicWidth" : 300,
-        "left" : 759,
+        "left" : 831,
         "locked" : false,
         "name" : null,
         "opacity" : 1,
@@ -51,9 +61,9 @@
         "radiusTopRight" : 0,
         "right" : null,
         "rotation" : 0,
-        "top" : -663,
+        "top" : -548,
         "visible" : true,
-        "width" : 510,
+        "width" : 499,
         "widthType" : 0
       }
     ],

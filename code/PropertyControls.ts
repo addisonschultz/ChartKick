@@ -7,16 +7,63 @@ export function generatePropertyControls(
   } = {}
 ): PropertyControls {
   const properties: PropertyControls = {
-    // category: {
-    //   type: ControlType.String,
-    //   title: "Category",
-    //   defaultValue: options.defaultIconCategory || "action",
-    //   hidden: options.hidden
-    // },
+    min: {
+      type: ControlType.Number,
+      title: "Min",
+      step: 1,
+      displayStepper: true
+    },
+    max: {
+      type: ControlType.Number,
+      title: "Max",
+      step: 1,
+      displayStepper: true
+    },
+    stacked: {
+      type: ControlType.Boolean,
+      title: "Stacked",
+      defaultValue: true
+    },
+    discrete: {
+      type: ControlType.Boolean,
+      title: "Discrete",
+      defaultValue: true
+    },
     label: {
       type: ControlType.String,
-      placeholder: "",
-      title: "Label"
+      title: "Label",
+      defaultValue: "Label"
+    },
+    xtitle: {
+      type: ControlType.String,
+      title: "X Title",
+      defaultValue: "X Title"
+    },
+    ytitle: {
+      type: ControlType.String,
+      title: "Y Title",
+      defaultValue: "Y Title"
+    },
+    prefix: {
+      type: ControlType.String,
+      title: "Prefix",
+      defaultValue: ""
+    },
+    suffix: {
+      type: ControlType.String,
+      title: "Suffix",
+      defaultValue: ""
+    },
+    curved: {
+      type: ControlType.Boolean,
+      title: "Curved",
+      defaultValue: true
+    },
+    legend: {
+      type: ControlType.Enum,
+      title: "Legned",
+      options: ["", "bottom", "left", "top", "right"],
+      optionTitles: ["None", "Bottom", "Left", "Top", "Right"]
     }
   };
 
