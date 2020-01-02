@@ -1,20 +1,22 @@
 {
-  "main": "dist/index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@framer/framer.device-skin-apple-iphone-xs-gold": "^1.0.0",
-    "@types/react": "^16.8"
-  },
-  "peerDependencies": {
-    "framer": "^1.0",
-    "react": "^16.8"
-  },
-  "framer": {
-    "id": "32db78cd-dc05-468f-ba96-b6f2b83cd6b9"
-  },
-  "author": "Addison Schultz",
-  "dependencies": {
-    "chart.js": "^2.9.3",
-    "react-chartkick": "^0.4.0"
-  }
+	"license": "MIT",
+	"main": "dist/index.js",
+	"devDependencies": {
+		"@framer/framer.device-skin-apple-iphone-xs-gold": "^1.0.0",
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"displayName": "Chartkick"
+	},
+	"author": "Addison Schultz",
+	"dependencies": {
+		"chart.js": "^2.9.3",
+		"react-chartkick": "^0.4.0"
+	},
+	"name": "@framer/addison.chartkick",
+	"version": "1.1.0"
 }

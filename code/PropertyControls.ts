@@ -59,7 +59,7 @@ export function generatePropertyControls(
     },
     legend: {
       type: ControlType.Enum,
-      title: "Legned",
+      title: "Legend",
       options: ["", "bottom", "left", "top", "right"],
       optionTitles: ["None", "Bottom", "Left", "Top", "Right"]
     },
