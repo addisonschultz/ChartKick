@@ -15,14 +15,11 @@ export function ChartkickScatterChart(props) {
         height="100%"
         min={props.min}
         max={props.max}
-        stacked={props.stacked}
-        discrete={props.discrete}
         label={props.label}
         xtitle={props.xtitle}
         ytitle={props.ytitles}
         prefix={props.prefix}
         suffix={props.suffix}
-        curve={props.curve}
         legend={props.legend}
         messages={{ empty: "No data available" }}
         data={{

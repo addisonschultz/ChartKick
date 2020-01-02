@@ -4,7 +4,12 @@ import { generatePropertyControls } from "./PropertyControls";
 import { GeoChart } from "react-chartkick";
 import "chart.js";
 
-export function ChartkickGeoChart(props) {
+/**
+ *
+ * @TODO finish and add GeoCharting suite
+ *
+ */
+function ChartkickGeoChart(props) {
   const { tint, ...rest } = props;
 
   return (
@@ -16,14 +21,11 @@ export function ChartkickGeoChart(props) {
         height="100%"
         min={props.min}
         max={props.max}
-        stacked={props.stacked}
-        discrete={props.discrete}
         label={props.label}
         xtitle={props.xtitle}
         ytitle={props.ytitles}
         prefix={props.prefix}
         suffix={props.suffix}
-        curve={props.curve}
         legend={props.legend}
         messages={{ empty: "No data available" }}
         data={[

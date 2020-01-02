@@ -19,21 +19,22 @@ export function generatePropertyControls(
       step: 1,
       displayStepper: true
     },
-    stacked: {
-      type: ControlType.Boolean,
-      title: "Stacked",
-      defaultValue: true
-    },
-    discrete: {
-      type: ControlType.Boolean,
-      title: "Discrete",
-      defaultValue: true
-    },
-    label: {
-      type: ControlType.String,
-      title: "Label",
-      defaultValue: "Label"
-    },
+
+    /**
+     * Below two properties don't work
+     *
+     */
+    // stacked: {
+    //   type: ControlType.Boolean,
+    //   title: "Stacked",
+    //   defaultValue: true
+    // },
+    // discrete: {
+    //   type: ControlType.Boolean,
+    //   title: "Discrete",
+    //   defaultValue: true
+    // },
+
     xtitle: {
       type: ControlType.String,
       title: "X Title",
@@ -54,16 +55,19 @@ export function generatePropertyControls(
       title: "Suffix",
       defaultValue: ""
     },
-    curved: {
-      type: ControlType.Boolean,
-      title: "Curved",
-      defaultValue: true
-    },
     legend: {
       type: ControlType.Enum,
       title: "Legned",
       options: ["", "bottom", "left", "top", "right"],
       optionTitles: ["None", "Bottom", "Left", "Top", "Right"]
+    },
+    label: {
+      type: ControlType.String,
+      title: "Label",
+      defaultValue: "Label",
+      hidden(props) {
+        return props.legend === "";
+      }
     }
   };
 

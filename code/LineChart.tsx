@@ -15,14 +15,12 @@ export function ChartkickLineChart(props) {
         height="100%"
         min={props.min}
         max={props.max}
-        stacked={props.stacked}
-        discrete={props.discrete}
+        curve={props.curve}
         label={props.label}
         xtitle={props.xtitle}
         ytitle={props.ytitles}
         prefix={props.prefix}
         suffix={props.suffix}
-        curve={props.curve}
         legend={props.legend}
         messages={{ empty: "No data available" }}
         data={{
@@ -36,7 +34,14 @@ export function ChartkickLineChart(props) {
   );
 }
 
-addPropertyControls(ChartkickLineChart, { ...generatePropertyControls() });
+addPropertyControls(ChartkickLineChart, {
+  curve: {
+    type: ControlType.Boolean,
+    title: "Curved",
+    defaultValue: true
+  },
+  ...generatePropertyControls()
+});
 
 ChartkickLineChart.defaultProps = {
   height: 300,
