@@ -22,10 +22,11 @@ export function ChartkickAreaChart(props) {
         suffix={props.suffix}
         legend={props.legend}
         messages={{ empty: "No data available" }}
-        data={{
-          "2017-01-01 00:00:00 -0800": 2,
-          "2017-01-01 00:01:00 -0800": 5
-        }}
+        // data={{
+        //   1: 2,
+        //   2: 5
+        // }}
+        data={{ "Item 1": 1, "Item 2": 2 }}
       />
     </Frame>
   );
