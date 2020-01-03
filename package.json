@@ -10,7 +10,8 @@
 		"react": "^16.8"
 	},
 	"framer": {
-		"displayName": "Chartkick"
+		"displayName": "Chartkick",
+		"id": "c298f110-3d7d-4818-8d5c-4c1df11c7a9c"
 	},
 	"author": "Addison Schultz",
 	"dependencies": {
@@ -18,5 +19,5 @@
 		"react-chartkick": "^0.4.0"
 	},
 	"name": "@framer/addison.chartkick",
-	"version": "1.1.0"
+	"version": "1.2.0"
 }

@@ -1,4 +1,4 @@
-A set of charting components from Chartkick
+A set of charting components from [Chartkick](https://chartkick.com/react)
 
 Includes
 
