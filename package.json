@@ -14,7 +14,7 @@
 	},
 	"author": "Addison Schultz",
 	"dependencies": {
-		"chart.js": "^2.9.3",
+		"chart.js": "^2.9.4",
 		"react-chartkick": "^0.4.0"
 	},
 	"name": "@framer/addison.chartkick",
